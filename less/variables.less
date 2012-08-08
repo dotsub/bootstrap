@@ -30,6 +30,24 @@
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
+// dotSUB colors
+@dotsubBlue:            #0b506f;
+@dotsubBlueHighlight:   #336880;
+@dotsubMainBlue:        #2281aa;
+@dotsubLightBlue:       #55aed4;
+@dotsubLighterBlue:     #77b8d4;
+
+@dotsubYellow:          #a67b0d;
+@dotsubYellowHighlight: #bf9d47;
+@dotsubMainYellow:      #ffc329;
+@dotsubLightYellow:     #ffd25f;
+@dotsubLighterYellow:   #ffde89;
+
+@dotsubRed:             #a62b0d;
+@dotsubRedHighlight:    #bf5e47;
+@dotsubMainRed:         #ff5229;
+@dotsubLightRed:        #ff7d5f;
+@dotsubLighterRed:      #ffa089;
 
 // Scaffolding
 // -------------------------
@@ -146,15 +164,15 @@
 // Navbar
 // -------------------------
 @navbarHeight:                    40px;
-@navbarBackground:                @grayDarker;
-@navbarBackgroundHighlight:       @grayDark;
+@navbarBackground:                @dotsubBlue;
+@navbarBackgroundHighlight:       @dotsubBlueHighlight;
 
-@navbarText:                      @grayLight;
-@navbarLinkColor:                 @grayLight;
-@navbarLinkColorHover:            @white;
-@navbarLinkColorActive:           @navbarLinkColorHover;
+@navbarText:                      @white;
+@navbarLinkColor:                 @white;
+@navbarLinkColorHover:            @dotsubLighterBlue;
+@navbarLinkColorActive:           @white;
 @navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      @navbarBackground;
+@navbarLinkBackgroundActive:      @dotsubMainBlue;
 
 @navbarSearchBackground:          lighten(@navbarBackground, 25%);
 @navbarSearchBackgroundFocus:     @white;
