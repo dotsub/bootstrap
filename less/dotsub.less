@@ -12,14 +12,14 @@
 
 body {
     padding-top: 40px;
+    background-image: url("/images/enterprise/Map&Languages.png");
+    background-position: 0 40px;
+    background-repeat: repeat-x;
 }
 
 .masthead {
   padding-top: 36px;
   margin-bottom: 72px;
-}
-
-.masthead h1, .masthead p {
   text-align: center;
 }
 
@@ -113,4 +113,35 @@ body {
 }
 .dropdown-form .signin {
     margin: 0;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer {
+  padding-left:  20px;
+  padding-right: 20px;
+  #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
+  .border-radius(4px);
+  .box-shadow(~"0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1)");
+  padding-top: 20px;
+}
+
+.footer ul li, .footer ul li a {
+    color: @white;
+}
+
+.footer ul li span {
+    font-weight: bold;
+    color: @white;
+}
+
+.submenu {
+    padding-top: 20px
+}
+
+.submenu .nav-list {
+    padding-left: 5px;
+    padding-right: 5px;
 }
