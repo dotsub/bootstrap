@@ -35,3 +35,4 @@ bootstrap
 .CVS
 .idea
 node_modules
+dist
