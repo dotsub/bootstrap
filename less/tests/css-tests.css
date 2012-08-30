@@ -12,10 +12,9 @@ body {
 .subhead {
   margin-bottom: 36px;
 }
-/*h4 {
+h4 {
   margin-bottom: 5px;
 }
-*/
 
 .type-test {
   margin-bottom: 20px;
@@ -30,7 +29,6 @@ body {
 .type-test h6 {
   background-color: rgba(255,0,0,.2);
 }
-
 
 /* colgroup tests */
 .col1 {
