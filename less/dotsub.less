@@ -10,6 +10,7 @@
   text-shadow: 0 1px 0 @black;
 }
 
+
 body {
     padding-top: 40px;
     background-image: url("/images/enterprise/Map&Languages.png");
@@ -17,9 +18,14 @@ body {
     background-repeat: repeat-x;
 }
 
+
 .masthead {
   padding-top: 36px;
   text-align: center;
+}
+
+.mastheadGradient {
+    #gradient > .vertical(rgba(255,255,255,0), rgba(187,187,187,1));
 }
 
 .masthead h1 {
@@ -80,6 +86,7 @@ body {
     margin-right: 5%;
     font-size: 30px;
     line-height: 36px;
+    color: @headingsColor;
 }
 
 .dropdown-form {
@@ -144,14 +151,6 @@ body {
     padding-right: 5px;
 }
 
-#tryDemo {
-    font-weight: bold;
-    left: -314px;
-    position: relative;
-    top: -100px;
-    font-size: 22px;
-}
-
 #mailingSignUp fieldset {
     margin-bottom: 0;
 }
@@ -186,4 +185,39 @@ body {
 
 .oldSiteWarning .alert {
    margin-bottom: -25px
+}
+
+.callToAction {
+    text-align: center;
+    .border-radius(0px);
+}
+
+.callToAction span {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 46px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.callToAction button {
+    position: relative;
+    top: -5px;
+}
+
+.carousel .item > img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel .item .carousel-caption {
+    text-align: left;
+    background: none;
+}
+
+.carousel .item button{
+    font-weight: bold;
+    font-size: 22px;
+    position: relative;
+    right: -140px;
 }
