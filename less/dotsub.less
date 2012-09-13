@@ -39,7 +39,7 @@ body {
 .masthead p {
   margin-left: 5%;
   margin-right: 5%;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 36px;
 }
 
@@ -88,7 +88,7 @@ body {
 .masthead p {
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 36px;
     color: @headingsColor;
 }
@@ -132,7 +132,6 @@ body {
   padding-left:  20px;
   padding-right: 20px;
   #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
-  .border-radius(4px);
   .box-shadow(~"0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1)");
   padding-top: 20px;
 }
@@ -257,5 +256,33 @@ body {
         border-color: #ddd;
         border-color: rgba(0,0,0,.15);
     }
+}
 
+.button-row div {
+    #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
+    height: 20px;
+    color: @navbarText;
+    font-weight: bold;
+    padding-top: 7px;
+    border-left-color: @navbarInverseBackground;
+    border-right-color: @navbarInverseBackgroundHighlight;
+    border-collapse: collapse;
+}
+
+.button-row div.active {
+    background-color: @navbarLinkBackgroundActive;
+    height: 25px;
+    background-image: none;
+    position: relative;
+    top: -5px;
+    border: none;
+}
+
+.button-row div:hover {
+    font-weight: bold;
+}
+
+.benefits div {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
