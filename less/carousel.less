@@ -71,18 +71,20 @@
   position: absolute;
   top: 40%;
   left: 15px;
-  width: 40px;
   height: 40px;
+  width: 40px;
   margin-top: -20px;
-  font-size: 60px;
+  font-size: 26px;
   font-weight: 100;
-  line-height: 30px;
-  color: @white;
+  line-height: 45px;
   text-align: center;
-  background: @grayDarker;
+  color: @white;
+  .opacity(50);
+
+  background: @dotsubBlue;
   border: 3px solid @white;
   .border-radius(23px);
-  .opacity(50);
+  text-indent: -3px;
 
   // we can't have this transition here
   // because webkit cancels the carousel
@@ -95,6 +97,7 @@
   &.right {
     left: auto;
     right: 15px;
+    text-indent: 5px;
   }
 
   // Hover state

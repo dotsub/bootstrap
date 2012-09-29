@@ -36,11 +36,12 @@ body {
   margin-bottom: 18px;
 }
 
-.masthead p {
+.masthead p, .marketing .page-header p {
   margin-left: 5%;
   margin-right: 5%;
   font-size: 28px;
   line-height: 36px;
+  color: @headingsColor;
 }
 
 .jumbotron {
@@ -142,6 +143,7 @@ body {
 
 .footer ul li span {
     font-weight: bold;
+    font-size: 18px;
     color: @white;
 }
 
@@ -192,20 +194,30 @@ body {
 
 .callToAction {
     text-align: center;
+    padding-top: 15px;
     .border-radius(0px);
 }
 
 .callToAction span {
     display: inline-block;
-    font-size: 24px;
+    font-size: 36px;
     line-height: 46px;
     margin-left: 15px;
     margin-top: 5px;
+    color: @headingsColor;
+    font-weight: bold;
 }
 
 .callToAction button {
     position: relative;
-    top: -5px;
+    top: -8px;
+}
+
+.callToAction .container {
+    text-align: left;
+    position: relative;
+    left: 25px;
+    width: 800px;
 }
 
 .carousel .item > img {
@@ -223,6 +235,7 @@ body {
     font-size: 22px;
     position: relative;
     right: -140px;
+    top: -30px;
 }
 
 .clientInfo .span8 {
@@ -259,10 +272,8 @@ body {
 }
 
 .button-row div {
-    #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
-    height: 20px;
     color: @navbarText;
-    font-weight: bold;
+    height: 25px;
     padding-top: 7px;
     border-left: 1px solid @navbarBackground;
     border-right: 1px solid @navbarBackgroundHighlight;
@@ -270,18 +281,47 @@ body {
 
 .button-row div.active {
     background-color: @navbarLinkBackgroundActive;
-    height: 25px;
-    background-image: none;
-    position: relative;
-    top: -5px;
-    border: none;
-}
-
-.button-row div:hover {
     font-weight: bold;
+    background-image: none;
+    border: none;
 }
 
 .benefits div {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+
+@font-face {
+    font-family: '_bariol';
+    src: url('/styles/bariol_regular-webfont.eot');
+    src: url('/styles/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('/styles/bariol_regular-webfont.otf') format('truetype'),
+         url('/styles/bariol_regular-webfont.svg#bariol') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-variant:normal;
+}
+
+@font-face {
+    font-family: '_bariol';
+    src: url('/styles/bariol_bold-webfont.eot');
+    src: url('/styles/bariol_bold-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('/styles/bariol_bold-webfont.otf') format('truetype'),
+         url('/styles/bariol_bold-webfont.svg#bariol') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-variant:normal;
+}
+
+.navbar-static-top .brand {
+    font-family: "_bariol","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 26px;
+}
+
+.button-row-container {
+    background-color: @navbarBackgroundHighlight;
+    box-shadow: 0 11px 5px #eee;
 }
