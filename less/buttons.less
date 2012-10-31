@@ -7,7 +7,7 @@
 // --------------------------------------------------
 
 // Core
-.btn {
+.btn, .button{
   display: inline-block;
   .ie7-inline-block();
   padding: 4px 14px;
@@ -127,12 +127,12 @@
 
 // Set the backgrounds
 // -------------------------
-.btn {
+.btn, .button{
   // reset here as of 2.0.3 due to Recess property order
   border-color: #c5c5c5;
   border-color: rgba(0,0,0,.15) rgba(0,0,0,.15) rgba(0,0,0,.25);
 }
-.btn-primary {
+.btn-primary, .orange {
   .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
 }
 // Warning appears are orange
