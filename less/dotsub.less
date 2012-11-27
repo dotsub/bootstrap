@@ -5,7 +5,7 @@
   padding-left: 0;
   margin-left: 20px;
   float: right;
-  font-weight: bold;
+  font-family: @headingsFontFamily;
   color: @white;
   text-shadow: 0 1px 0 @black;
 }
@@ -18,7 +18,7 @@ body {
 }
 
 .navbar-static-top .brand {
-    font-weight: bold;
+    font-family: @headingsFontFamily;
     margin-left: 20px;
 }
 
@@ -51,7 +51,7 @@ body {
 .jumbotron h1 {
     margin-bottom: 9px;
     font-size: 65px;
-    font-weight: bold;
+    font-family: @headingsFontFamily;
     letter-spacing: -1px;
     line-height: 1;
 }
@@ -142,7 +142,7 @@ body {
 }
 
 .footer ul li span {
-    font-weight: bold;
+    font-family: @headingsFontFamily;
     font-size: 18px;
     color: @white;
 }
@@ -162,7 +162,7 @@ body {
 
 .well button {
     color: @wellColor;
-    font-weight: bold;
+    font-family: @headingsFontFamily;
     font-size: 22px;
 }
 
@@ -205,7 +205,7 @@ body {
     margin-left: 15px;
     margin-top: 5px;
     color: @headingsColor;
-    font-weight: bold;
+    font-family: @headingsFontFamily;
 }
 
 .callToAction button {
@@ -232,7 +232,7 @@ body {
 }
 
 .carousel .item button{
-    font-weight: bold;
+    font-family: @headingsFontFamily;
     font-size: 22px;
     position: relative;
     right: -55px;
@@ -281,7 +281,7 @@ body {
 
 .button-row div.active {
     background-color: @navbarLinkBackgroundActive;
-    font-weight: bold;
+    font-family: @headingsFontFamily;
     background-image: none;
     border: none;
 }
@@ -297,27 +297,30 @@ body {
     src: url('/styles/bariol_regular-webfont.eot');
     src: url('/styles/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
 
-         url('/styles/bariol_regular-webfont.otf') format('truetype'),
-         url('/styles/bariol_regular-webfont.svg#bariol') format('svg');
+         url('/styles/bariol_regular-webfont.svg#_bariol') format('svg'),
+         url('/styles/bariol_regular-webfont.woff') format('woff'),
+         url('/styles/bariol_regular-webfont.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-variant:normal;
 }
 
 @font-face {
-    font-family: '_bariol';
+    font-family: '_bariol_bold';
     src: url('/styles/bariol_bold-webfont.eot');
     src: url('/styles/bariol_bold-webfont.eot?#iefix') format('embedded-opentype'),
 
-         url('/styles/bariol_bold-webfont.otf') format('truetype'),
-         url('/styles/bariol_bold-webfont.svg#bariol') format('svg');
+         url('/styles/bariol_bold-webfont.svg#_bariol_bold') format('svg'),
+         url('/styles/bariol_bold-webfont.woff') format('woff'),
+         url('/styles/bariol_bold-webfont.otf') format('truetype');
+
     font-weight: bold;
     font-style: normal;
     font-variant:normal;
 }
 
 .navbar-static-top .brand {
-    font-family: "_bariol","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "_bariol_bold","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 26px;
 }
 

@@ -51,7 +51,6 @@ div.featuredMedia {
 }
 .featuredMedia .thumbnail .thumbnail-holder, .thumbnails .thumbnail .thumbnail-holder, .otherMedia .thumbnail-outline .thumbnail-holder {
     display: table-cell;
-    height: 120px;
     text-align: center;
     vertical-align: middle;
     width: 160px;
@@ -336,4 +335,61 @@ div.featuredMedia {
 
 #pageBg {
     min-height: 250px;
+}
+
+.userVideoItem, .userVideo .thumbholder, .userVideo {
+    margin-left: 0;
+    padding-left: 5px;
+}
+
+.otherMedia {
+    padding-left: 10px;
+    margin-left: 0;
+    width: 130px;
+}
+
+.otherMedia .thumbnail-holder, .otherMedia .thumbnail-outline, .otherMedia .preview {
+    width: 125px;
+}
+
+.otherMedia .thumbnail-outline .thumbnail-holder {
+    display: table-cell;
+    height: 90px;
+    text-align: center;
+    vertical-align: middle;
+    width: 125px;
+}
+
+.mediaLinks .otherMedia .thumbnail-outline {
+    border: none;
+    height: 90px;
+    overflow: hidden;
+    padding: 1px;
+    position: relative;
+    width: 125px;
+}
+
+.userVideo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.userVideoItem {
+    width: 205px;
+}
+
+#playList .selected {
+    background-color: @dotsubLighterBlue;
+    border: 1px solid @dotsubBlue;
+    border: 1px solid rgba(0,0,0,.25);
+    .border-radius(4px);
+}
+
+.teamBio {
+    padding-bottom: 15px;
+}
+.teamBio img {
+    padding-right: 15px;
 }
