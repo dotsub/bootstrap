@@ -197,8 +197,13 @@ div.featuredMedia .metadata span a:hover {
 .mediaDescription {
     font-style: italic;
 }
-.mediaBox .mediaMetadata h4 a {
+.listview .mediaBox .mediaMetadata h4 a {
     word-wrap: break-word;
+    height: 25px;
+    display: block;
+}
+
+.thumbnails .mediaBox .mediaMetadata h4 a {
     height: 60px;
     display: block;
     overflow: hidden;
@@ -508,4 +513,34 @@ div.featuredMedia {
 
 #displayMedia #ratingDiv {
   padding-top: 15px;
+}
+
+.featuredMedia .thumbnail img, .thumbnails .mediaBox .thumbnail img, .mediaLinks .thumbnail-holder img {
+    width: 160px;
+    top: -15px;
+    position: relative;
+    overflow: hidden;
+}
+.thumbnails .thumbnail .thumbnail-outline .thumbnail-shim, .mediaLinks .otherMedia .thumbnail-outline .thumbnail-shim, .featuredMedia .thumbnail .thumbnail-outline .thumbnail-shim  {
+    overflow: hidden;
+    height: 90px;
+}
+
+.featuredMedia .thumbnail-holder span, .thumbnails .thumbnail-holder span, .otherMedia .thumbnail-outline .thumbnail-holder span {
+    vertical-align: middle;
+    height: 100%;
+    *display: inline-block;
+}
+
+.featuredMedia .thumbnail-holder *, .thumbnails .thumbnail-holder *, .otherMedia .thumbnail-outline .thumbnail-holder *{
+    vertical-align: middle;
+}
+
+.featuredMedia .thumbnail .thumbnail-holder, .thumbnails .thumbnail .thumbnail-holder, .otherMedia .thumbnail-outline .thumbnail-holder {
+    vertical-align: middle;
+    text-align: center;
+    width: 160px;
+    height: 120px;
+    display: table-cell;
+    *display: block;
 }
