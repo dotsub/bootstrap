@@ -143,13 +143,13 @@ div.featuredMedia .metadata span a:hover {
     margin-bottom: 10px;
 }
 
-#mediaList.thumbnails .mediaBox:first-child, #mediaList.thumbnails .mediaBox:nth-child(6n), .featuredMedia:first-child, .featuredMedia:nth-child(6n)  {
+#mediaList.thumbnails .mediaBox:first-child, #mediaList.thumbnails .mediaBox:nth-child(5n+1), .featuredMedia:first-child, .featuredMedia:nth-child(6n)  {
     padding-left: 0;
 }
 
 .thumbnails .mediaBox, .featuredMedia {
     float: left;
-    height: 380px;
+    height: 400px;
     padding-bottom: 15px;
     padding-left: 15px;
     width: 176px;
@@ -178,7 +178,7 @@ div.featuredMedia .metadata span a:hover {
     width: 165px;
 }
 .thumbnails .mediaDescription {
-    height: 60px;
+    height: 55px;
     margin-bottom: 15px;
     margin-top: 15px;
     overflow: hidden;
@@ -197,6 +197,13 @@ div.featuredMedia .metadata span a:hover {
 .mediaDescription {
     font-style: italic;
 }
+.mediaBox .mediaMetadata h4 a {
+    word-wrap: break-word;
+    height: 60px;
+    display: block;
+    overflow: hidden;
+}
+
 .mediaBox .mediaMetadata span a {
     text-decoration: none;
 }
@@ -489,11 +496,6 @@ div.featuredMedia {
   .border-bottom-radius(5px);
   padding: 10px;
   margin-bottom: 10px;
-}
-
-#mediaRatingInfo {
-  font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
-  font-size: 12px;
 }
 
 #mediaRatingInfo {
