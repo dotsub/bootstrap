@@ -512,7 +512,7 @@ div.featuredMedia {
 }
 
 #displayMedia #ratingDiv {
-  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .featuredMedia .thumbnail img, .thumbnails .mediaBox .thumbnail img, .mediaLinks .thumbnail-holder img {
@@ -543,4 +543,47 @@ div.featuredMedia {
     height: 120px;
     display: table-cell;
     *display: block;
+}
+
+#displayMedia #mediaShare ul {
+  margin-left: 0;
+}
+
+#displayMedia #mediaShare ul li {
+  margin-bottom: 5px;
+}
+
+#displayMedia #mediaShare h4 {
+  margin-top: 10px;
+}
+
+img.spinner {
+    height: 1em;
+}
+
+div.spinner {
+    display: inline;
+    white-space: nowrap;
+    height: 1em;
+    width: 17px;
+    visibility: visible;
+}
+
+#displayMedia #mediaTranscription {
+  max-height: 260px;
+}
+
+#displayMedia #mediaTranscription a {
+  text-decoration: none;
+  color: @textColor;
+}
+
+#displayMedia #mediaTranscription a:hover {
+  color: @dotsubBlueHighlight;
+  text-decoration: underline;
+}
+
+#displayMedia #mediaTranscription div a.highlight {
+  background-color: @dotsubBlue;
+  color: @white;
 }
