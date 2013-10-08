@@ -89,6 +89,8 @@ div.featuredMedia {
 }
 .featuredMedia h4 {
     font-weight: bold;
+    max-height: 60px;
+    overflow: hidden;
 }
 
 div.featuredMedia .metadata span a {
@@ -153,14 +155,14 @@ div.featuredMedia .metadata span a:hover {
 
 .thumbnails .mediaBox, .featuredMedia {
     float: left;
-    height: 400px;
+    height: 365px;
     padding-bottom: 15px;
     padding-left: 15px;
     width: 176px;
 }
 
 .featuredMedia {
-    height: 260px;
+    height: 200px;
 }
 
 .thumbnail {
@@ -622,4 +624,63 @@ div.spinner {
 
 .userTeams .thumbnail {
     max-width: 165px;
+}
+
+.thumbnail-views, .thumbnail-time {
+    padding-right: 2px;
+    padding-left: 2px;
+    border-radius: 3px 3px 3px 3px;
+    opacity: 0.75; font-family: @headingsFontFamily;
+    background-color: #000;
+    color: #FFFFFF;
+    font-size: 10px;
+    height: auto;
+    position: relative;
+    top: -20px;
+}
+
+.thumbnail-views {
+  margin-left: 2px;
+}
+
+.thumbnail-time {
+  margin-right: 2px;
+}
+
+.noPreviewImage .thumbnail-views, .noPreviewImage .thumbnail-time {
+  top: 70px !important;
+}
+
+.listview .thumbnail-outline, .listview .noPreviewImage {
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    padding: 6px;
+}
+
+.thumbnails .thumbnail-outline {
+    border: none;
+}
+
+.listview .thumbnail {
+    border: none;
+    padding: 0px;
+}
+
+.teamPage .span8 {
+    margin-left: 0px;
+    width: 640px;
+}
+
+.teamHeading, .teamMedia {
+    margin-left: 20px;
+}
+.teamDescription {
+    padding-right: 10px;
+    border-right: 1px solid #DDDDDD;
+    margin-right: -1px;
+}
+
+.teamPage .teamNav {
+    margin-bottom: 0px;
+    padding-bottom: 18px;
 }
