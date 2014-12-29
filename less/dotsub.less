@@ -1,11 +1,38 @@
 // Styles below are dotsub related
 
+@font-face {
+  font-family: '_bariol';
+  src: url('/styles/bariol_regular-webfont.eot');
+  src: url('/styles/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+
+  url('/styles/bariol_regular-webfont.svg#_bariol') format('svg'),
+  url('/styles/bariol_regular-webfont.woff') format('woff'),
+  url('/styles/bariol_regular-webfont.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-variant:normal;
+}
+
+@font-face {
+  font-family: '_bariol_bold';
+  src: url('/styles/bariol_bold-webfont.eot');
+  src: url('/styles/bariol_bold-webfont.eot?#iefix') format('embedded-opentype'),
+
+  url('/styles/bariol_bold-webfont.svg#_bariol_bold') format('svg'),
+  url('/styles/bariol_bold-webfont.woff') format('woff'),
+  url('/styles/bariol_bold-webfont.otf') format('truetype');
+
+  font-weight: bold;
+  font-style: normal;
+  font-variant:normal;
+}
+
 .navbar-fixed-top .brand {
   padding-right: 0;
   padding-left: 0;
   margin-left: 20px;
   float: right;
-  font-family: @headingsFontFamily;
+  font-family: @headings-font-family;
   color: @white;
   text-shadow: 0 1px 0 @black;
 }
@@ -18,7 +45,7 @@ body {
 }
 
 .navbar-static-top .brand {
-    font-family: @headingsFontFamily;
+    font-family: @headings-font-family;
     margin-left: 20px;
     height: 18px;
 }
@@ -52,7 +79,7 @@ body {
   margin-right: 5%;
   font-size: 28px;
   line-height: 36px;
-  color: @headingsColor;
+  color: @headings-color;
 }
 
 .jumbotron {
@@ -62,7 +89,7 @@ body {
 .jumbotron h1 {
     margin-bottom: 9px;
     font-size: 65px;
-    font-family: @headingsFontFamily;
+    font-family: @headings-font-family;
     letter-spacing: -1px;
     line-height: 1;
 }
@@ -77,7 +104,7 @@ body {
     font-weight: normal;
     padding: 14px 24px;
     margin-right: 10px;
-    .border-radius(6px);
+    border-radius: 6px;
 }
 
 .jumbotron .btn-large small {
@@ -102,7 +129,7 @@ body {
     margin-right: 5%;
     font-size: 28px;
     line-height: 36px;
-    color: @headingsColor;
+    color: @headings-color;
 }
 
 .dropdown-form {
@@ -112,7 +139,7 @@ body {
 }
 
 .dropdown-form label {
-    color: @textColor;
+    color: @text-color;
 }
 
 .dropdown-form .subchck {
@@ -143,7 +170,7 @@ body {
 .footer {
   padding-left:  20px;
   padding-right: 20px;
-  #gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
+  background-color: @navbar-default-bg;
   .box-shadow(~"0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1)");
   padding-top: 20px;
 }
@@ -153,7 +180,7 @@ body {
 }
 
 .footer ul li span {
-    font-family: @headingsFontFamily;
+    font-family: @headings-font-family;
     font-size: 18px;
     color: @white;
 }
@@ -172,8 +199,8 @@ body {
 }
 
 .well button {
-    color: @wellColor;
-    font-family: @headingsFontFamily;
+    color: @well-bg;
+    font-family: @headings-font-family;
     font-size: 22px;
 }
 
@@ -207,7 +234,7 @@ body {
 .callToAction {
     text-align: center;
     padding-top: 15px;
-    .border-radius(0px);
+    border-radius: 0px;
 }
 
 .callToAction span {
@@ -216,18 +243,18 @@ body {
     line-height: 46px;
     margin-left: 15px;
     margin-top: 5px;
-    color: @headingsColor;
-    font-family: @headingsFontFamily;
+    color: @headings-color;
+    font-family: @headings-font-family;
 }
 
 .callToAction button {
     position: relative;
     top: -8px;
-    color: @headingsColor;
+    color: @headings-color;
 }
 
 .callToAction button:hover {
-    color: @headingsColor;
+    color: @headings-color;
 }
 
 .callToAction .container {
@@ -248,10 +275,11 @@ body {
 }
 
 .carousel .item button{
-    font-family: @headingsFontFamily;
+    font-family: @headings-font-family;
     font-size: 22px;
     position: relative;
-    right: -55px;
+    right: 155px;
+    bottom: -40px;
 }
 
 .clientInfo .span8 {
@@ -277,9 +305,9 @@ body {
     min-height: 20px;
     margin-bottom: 20px;
     margin-left: 0px;
-    border: 1px solid @wellBorderColor;
+    border: 1px solid @well-border;
     border: 1px solid rgba(0,0,0,.05);
-    .border-radius(5px);
+    border-radius: 5px;
     .box-shadow(inset 0 1px 1px rgba(0,0,0,.05));
     blockquote {
         border-color: #ddd;
@@ -288,21 +316,21 @@ body {
 }
 
 .button-row div {
-    color: @navbarText;
-    height: 25px;
+    color: @white;
     padding-top: 7px;
-    border-left: 1px solid @navbarBackground;
-    border-right: 1px solid @navbarBackgroundHighlight;
+    padding-bottom: 7px;
+    border-left: 1px solid @navbar-default-bg;
+    border-right: 1px solid @navbar-default-brand-hover-bg;
     cursor: pointer;
 }
 
 .button-row div:first-child {
-    border-right: 1px solid @navbarBackground;
+    border-right: 1px solid @navbar-default-bg;
 }
 
 .button-row div.active {
-    background-color: @navbarLinkBackgroundActive;
-    font-family: @headingsFontFamily;
+    background-color: @navbar-default-link-active-bg;
+    font-family: @headings-font-family;
     background-image: none;
     border: none;
 }
@@ -312,41 +340,12 @@ body {
     padding-bottom: 10px;
 }
 
-
-@font-face {
-    font-family: '_bariol';
-    src: url('/styles/bariol_regular-webfont.eot');
-    src: url('/styles/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
-
-         url('/styles/bariol_regular-webfont.svg#_bariol') format('svg'),
-         url('/styles/bariol_regular-webfont.woff') format('woff'),
-         url('/styles/bariol_regular-webfont.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-variant:normal;
-}
-
-@font-face {
-    font-family: '_bariol_bold';
-    src: url('/styles/bariol_bold-webfont.eot');
-    src: url('/styles/bariol_bold-webfont.eot?#iefix') format('embedded-opentype'),
-
-         url('/styles/bariol_bold-webfont.svg#_bariol_bold') format('svg'),
-         url('/styles/bariol_bold-webfont.woff') format('woff'),
-         url('/styles/bariol_bold-webfont.otf') format('truetype');
-
-    font-weight: bold;
-    font-style: normal;
-    font-variant:normal;
-}
-
-.navbar-static-top .brand {
-    font-family: "_bariol_bold","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 26px;
+.navbar-static-top {
+    border-radius: 0;
 }
 
 .button-row-container {
-    background-color: @navbarBackgroundHighlight;
+    background-color: @navbar-default-bg;
     box-shadow: 0 11px 5px #eee;
 }
 
@@ -359,7 +358,7 @@ body {
 }
 
 #enterpriseButton .btn-large:hover {
-    color: @headingsColor;
+    color: @headings-color;
 }
 
 .thumbnail .caption {
